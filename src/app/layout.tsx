@@ -17,7 +17,7 @@ const playFairDisplay = Playfair_Display({
 });
 export const metadata: Metadata = {
   title: "Queen Arit Circle",
-  description: "Queen Arit Circle || commuity ",
+  description: "Queen Arit Circle || community || Spicy-honest mentorship ",
   icons: "/QueenAritCircle.ico",
 };
 

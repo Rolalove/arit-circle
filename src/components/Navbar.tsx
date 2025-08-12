@@ -21,7 +21,7 @@ export const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex text-base gap-10 cursor-pointer">
+        <ul className="hidden lg:flex text-base gap-10 cursor-pointer">
           <li>Home</li>
           <li>Community</li>
           <li>Mentorship</li>
