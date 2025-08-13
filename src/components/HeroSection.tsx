@@ -3,7 +3,7 @@ import { Button } from "./Button";
 
 export const HeroSection = () => {
   return (
-    <section className="relative mt-40 lg:mt-20 w-full px-6 lg:px-0 lg:px-0 ">
+    <section className="relative mt-32 lg:mt-20 w-full px-6 lg:px-0  ">
       <div className="flex flex-col items-center text-center gap-y-4 md:gap-y-6 md:px-0">
         <Image
           src="/capsule.png"
@@ -16,10 +16,10 @@ export const HeroSection = () => {
           to <span className="text-[#FF4F77] herosubstext">EARNING!</span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-center font-medium text-[#000000] z-10  max-w-4xl  ">
-          That leap from learning to earning isn&apos;t always smooth. The Arit
-          Circle makes it easier by focusing on the skills that truly grow your
-          career interviewing, teamwork, leadership, storytelling, and more in a
-          community for beginners, mid-level pros, and everyone in between.
+          The Arit Circle makes it easier by focusing on the skills that truly
+          grow your career interviewing, teamwork, leadership, storytelling, and
+          more in a community for beginners, mid-level pros, and everyone in
+          between.
         </p>
 
         <Button
