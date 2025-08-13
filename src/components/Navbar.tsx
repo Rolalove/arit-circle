@@ -26,7 +26,6 @@ export const Navbar = () => {
           <li>Community</li>
           <li>Mentorship</li>
           <li>Live Sessions</li>
-          <li>FAQ</li>
         </ul>
 
         {/* Desktop Contact Button */}
@@ -52,7 +51,6 @@ export const Navbar = () => {
             <li className="cursor-pointer">Community</li>
             <li className="cursor-pointer">Mentorship</li>
             <li className="cursor-pointer">Live Sessions</li>
-            <li className="cursor-pointer hover:text-gray-300">FAQ</li>
           </ul>
           <div className="mt-4 pt-4 border-t border-gray-600">
             <Button

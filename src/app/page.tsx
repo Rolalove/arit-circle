@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="pt-32 lg:pt-10 flex flex-col  justify-center items-center lg:min-h-screen">
+      <main className=" flex flex-col  justify-center items-center lg:min-h-screen">
         <HeroSection />
       </main>
     </>
