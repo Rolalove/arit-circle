@@ -5,7 +5,7 @@ export const HeroSection = () => {
   return (
     <section className="relative flex flex-col items-center text-center w-full  md:w-[90%] gap-y-4 md:gap-y-8 px-6 md:px-0">
       <Image
-        src="/Capsule.png"
+        src="/capsule.png"
         width={389}
         height={44}
         alt=" Live every week, real feedback, real results"
