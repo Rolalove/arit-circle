@@ -14,7 +14,6 @@ const navigationItems = [
 
 export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("/");
   const menuButtonRef = useRef(null);
   const mobileMenuRef = useRef(null);
 
@@ -26,12 +25,8 @@ export const Navbar = () => {
     setMobileMenuOpen(false);
   };
 
-  const handleLinkClick = (href: string) => {
-    setActiveLink(href);
-    // Only close mobile menu for non-home links
-    if (href !== "/") {
-      closeMobileMenu();
-    }
+  const handleLinkClick = () => {
+    closeMobileMenu();
   };
 
   return (
@@ -58,12 +53,7 @@ export const Navbar = () => {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className={`
-                  relative px-3 py-2 rounded-full transition-all duration-200 
-                  hover:bg-white/10 hover:scale-105 
-                  ${activeLink === item.href ? "bg-white/20 font-semibold" : ""}
-                `}
-                onClick={() => handleLinkClick(item.href)}
+                className="relative px-3 py-2 rounded-full transition-all duration-200 hover:bg-white/10 hover:scale-105"
               >
                 {item.label}
               </Link>
@@ -91,16 +81,11 @@ export const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       <div
-        className={`
-          lg:hidden absolute top-full left-0 right-0 mt-2 
-          bg-[#202040] text-[#f6f6ff] rounded-2xl py-6 px-6 
-          transition-all duration-300 transform origin-top
-          ${
-            mobileMenuOpen
-              ? "opacity-100 scale-y-100 translate-y-0 pointer-events-auto"
-              : "opacity-0 scale-y-95 -translate-y-2 pointer-events-none"
-          }
-        `}
+        className={`lg:hidden absolute top-full left-0 right-0 mt-2 bg-[#202040] text-[#f6f6ff] rounded-2xl py-6 px-6 transition-all duration-300 transform origin-top ${
+          mobileMenuOpen
+            ? "opacity-100 scale-y-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 scale-y-95 -translate-y-2 pointer-events-none"
+        }`}
         id="mobile-menu"
         ref={mobileMenuRef}
       >
@@ -109,12 +94,8 @@ export const Navbar = () => {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className={`
-                  block px-4 py-3 rounded-xl text-center transition-all duration-200 
-                  hover:bg-white/10 hover:scale-[1.02]
-                  ${activeLink === item.href ? "bg-white/20 font-semibold" : ""}
-                `}
-                onClick={() => handleLinkClick(item.href)}
+                className="block px-4 py-3 rounded-xl text-center transition-all duration-200 hover:bg-white/10 hover:scale-[1.02]"
+                onClick={handleLinkClick}
               >
                 {item.label}
               </Link>
