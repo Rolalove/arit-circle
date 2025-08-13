@@ -30,13 +30,13 @@ export const Navbar = () => {
         </ul>
 
         {/* Desktop Contact Button */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Button text="Contact" href="https://proxy.nas.io/queenaritcircle" />
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white text-2xl"
+          className="lg:hidden text-white text-2xl"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle mobile menu"
         >
@@ -46,14 +46,12 @@ export const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-[#202040] text-white rounded-2xl py-4 px-6">
+        <div className="lg:hidden absolute font-medium top-full left-0 right-0 mt-2 bg-[#202040] text-[#f6f6ff] text-center rounded-2xl py-4 px-6">
           <ul className="flex flex-col gap-4 text-base">
-            <li className="cursor-pointer hover:text-gray-300">Home</li>
-            <li className="cursor-pointer hover:text-gray-300">Community</li>
-            <li className="cursor-pointer hover:text-gray-300">Mentorship</li>
-            <li className="cursor-pointer hover:text-gray-300">
-              Live Sessions
-            </li>
+            <li className="cursor-pointer">Home</li>
+            <li className="cursor-pointer">Community</li>
+            <li className="cursor-pointer">Mentorship</li>
+            <li className="cursor-pointer">Live Sessions</li>
             <li className="cursor-pointer hover:text-gray-300">FAQ</li>
           </ul>
           <div className="mt-4 pt-4 border-t border-gray-600">
