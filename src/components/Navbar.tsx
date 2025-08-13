@@ -81,7 +81,7 @@ export const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       <div
-        className={`lg:hidden absolute top-full left-0 right-0 mt-2 bg-[#202040] text-[#f6f6ff] rounded-2xl py-6 px-6 transition-all duration-300 transform origin-top ${
+        className={`lg:hidden absolute top-full left-0 right-0 mt-2 bg-[#202040] text-[#f6f6ff] rounded-2xl py-10 px-6 transition-all duration-300 transform origin-top ${
           mobileMenuOpen
             ? "opacity-100 scale-y-100 translate-y-0 pointer-events-auto"
             : "opacity-0 scale-y-95 -translate-y-2 pointer-events-none"
@@ -89,7 +89,7 @@ export const Navbar = () => {
         id="mobile-menu"
         ref={mobileMenuRef}
       >
-        <ul className="flex flex-col gap-3 text-base text-center py-4">
+        <ul className="flex flex-col gap-3 text-base text-center  ">
           {navigationItems.map((item) => (
             <li key={item.href}>
               <Link
@@ -103,7 +103,7 @@ export const Navbar = () => {
           ))}
         </ul>
 
-        <div className="pt-4 border-t border-white/20 text-center">
+        <div className="pt-5 border-t border-white/20 text-center ">
           <Button text="Contact" href="https://proxy.nas.io/queenaritcircle" />
         </div>
       </div>

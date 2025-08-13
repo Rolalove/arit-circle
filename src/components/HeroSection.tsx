@@ -29,7 +29,7 @@ export const HeroSection = () => {
           className="shadow-[0px_0px_35px_0px_#20204066] mb-6 lg:mb-0 "
         />
       </div>
-      <div className="absolute inset-0 mt-6 mb-6 lg:mb-0  lg:-mt-12  bg-[url('/TheCircleMobile.png')]  lg:bg-[url('/TheCircle.png')] bg-no-repeat bg-center mx-auto bg-contain w-full lg:bg-cover h-[100vh] min-h-[55rem]  -z-10"></div>
+      <div className="absolute inset-0 mt-6 mb-6 lg:mb-0  lg:-mt-12  bg-[url('/TheCircleMobile.png')]  lg:bg-[url('/TheCircle.png')] bg-no-repeat bg-center mx-auto bg-contain w-full lg:bg-cover  min-h-[58rem]  -z-10"></div>
     </section>
   );
 };
