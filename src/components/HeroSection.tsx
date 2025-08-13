@@ -21,9 +21,9 @@ export const HeroSection = () => {
         to <span className="text-[#FF4F77] herosubstext">EARNING!</span>
       </h1>
       <p className="text-base sm:text-lg md:text-xl text-center font-medium text-[#000000] z-10 md:px-8 ">
-        That leap from learning to earning isn't always smooth. The Arit Circle
-        makes it easier by focusing on the skills that truly grow your career
-        interviewing, teamwork, leadership, storytelling, and more in a
+        That leap from learning to earning isn`&apos;t always smooth. The Arit
+        Circle makes it easier by focusing on the skills that truly grow your
+        career interviewing, teamwork, leadership, storytelling, and more in a
         community for beginners, mid-level pros, and everyone in between.
       </p>
       <div className="mt-4 md:mt-6 z-10">
